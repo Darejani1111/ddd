@@ -1,0 +1,175 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  width: 100%;
+  padding: 0px 10rem;
+  height: 80px;
+  justify-content: space-between !important;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #edd132;
+  z-index: 100;
+}
+header aside a {
+  margin: 0px;
+  padding: 0px;
+  font-size: 1.063rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Spinnaker", sans-serif;
+  color: #2f2e2e;
+}
+header nav input#checkbtn {
+  display: none;
+}
+header nav .bars {
+  color: #303131;
+  font-size: 22px;
+  padding: 1px 12px;
+  cursor: pointer;
+  order: 2;
+  display: none;
+  transition: 0.5s;
+}
+header nav ul {
+  margin: 0px;
+  padding: 0px;
+  justify-content: start;
+  align-items: center;
+  display: flex;
+  column-gap: 20px;
+  list-style: none;
+}
+header nav ul li {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li a {
+  padding: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #2f2e2e;
+  font-family: "Spinnaker", sans-serif;
+}
+header nav ul li a:hover {
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+main {
+  width: 100%;
+  display: grid;
+  position: relative;
+  padding-top: 80px;
+  box-sizing: border-box;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+main section {
+  width: 100%;
+  position: relative;
+}
+
+main section.banner {
+  width: 100%;
+  height: 43.75rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://static.wixstatic.com/media/9c608a_b27bae6fc68a4d66adede482c5bbc88d.jpg/v1/fill/w_1423,h_889,al_t,q_85,usm_0.66_1.00_0.01,enc_auto/9c608a_b27bae6fc68a4d66adede482c5bbc88d.jpg);
+}
+main section.banner div.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(17, 17, 17, 0.3);
+  flex-wrap: wrap;
+}
+main section.banner div.overlay article {
+  color: #ffffff;
+}
+main section.banner div.overlay article h2 {
+  margin: 0px;
+
+  font-size: 3.438rem;
+  font-family: "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+}
+main section.banner div.overlay article h3 {
+  margin: 0px;
+  display: inline-block;
+  font-size: 4.438rem;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Noto Sans", sans-serif;
+}
+footer {
+  width: 100%;
+  padding: 0px;
+  box-sizing: border-box;
+}
+footer div.info {
+  width: 100%;
+  margin: 0px;
+  height: 2.875rem;
+  background-color: #e0e0e0;
+  gap: 20px;
+}
+footer div.info a {
+  color: black;
+}
+footer div.info a:hover {
+  color: #5e5c5c;
+  transition: 0.3s ease;
+}
+footer article {
+  font-family: "Noto Sans", sans-serif;
+  row-gap: 5px;
+  font-weight: 100;
+}
+footer article h4 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  text-align: center;
+  text-decoration-line: underline;
+}
+footer article p {
+  margin: 0px;
+  font-size: 0.813rem;
+  text-align: center;
+}
+div.chat {
+  width: 64px;
+  height: 64px;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  background-color: rgb(237, 209, 50);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  flex-wrap: wrap;
+}
+div.chat i {
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+}
