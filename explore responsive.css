@@ -1,0 +1,114 @@
+@media screen and (max-width: 852px) {
+  html {
+    font-size: 16px;
+  }
+  header nav .bars {
+    display: inline-block;
+  }
+
+  main div article p {
+    word-break: break-all;
+  }
+
+  header {
+    height: 80px;
+  }
+  header nav ul {
+    width: 100%;
+    position: fixed;
+    flex-direction: column;
+    top: 80px;
+    right: -100%;
+    transition: 0.5s all;
+    z-index: 10;
+    box-sizing: border-box;
+    gap: 0px;
+  }
+  header nav ul li {
+    margin: 0px;
+  }
+  header nav ul li a {
+    color: #edd132;
+    font-size: 0.875rem;
+  }
+  header nav #checkbtn:checked ~ ul {
+    width: 100%;
+    height: 100%;
+    padding-top: 0px;
+    background-color: #585991;
+    right: 0px;
+  }
+}
+@media screen and (max-width: 700px) {
+  header {
+    padding: 0px 80px;
+  }
+  header nav ul {
+    top: 80px;
+  }
+  nav.bars {
+    padding: 12px;
+  }
+  footer {
+    padding-left: 0px;
+    padding-right: opx;
+  }
+  div.chat {
+    border-radius: 50%;
+  }
+  main section.banner {
+    background-size: cover;
+    background-image: 50%;
+  }
+}
+@media screen and (max-width: 518px) {
+  html {
+    font-size: 15px;
+  }
+  header {
+    padding: 0px 40px;
+  }
+  header nav ul {
+    top: 80px;
+  }
+  main div article p {
+    word-break: break-all;
+  }
+  main aside.img {
+    gap: 3rem;
+  }
+  main aside.flex-center {
+    gap: 2rem !important;
+  }
+  main section article.parts div.flex-box {
+    width: 16.25rem;
+    height: 25.25rem;
+  }
+  main section article.parts div.flex-box img {
+    width: 15rem;
+    height: 14rem;
+    left: 10px;
+  }
+  main section article.parts div.flex-box p {
+    left: 5px;
+    width: 220px;
+  }
+}
+@media screen and (max-width: 270px) {
+  header {
+    padding: 0px 0px;
+  }
+  header nav ul {
+    top: 80px;
+  }
+  main aside.img {
+    gap: 2rem;
+  }
+  main aside.flex-center {
+    gap: 1rem !important;
+  }
+  div.chat {
+    right: 0px;
+    bottom: 5px;
+  }
+}
